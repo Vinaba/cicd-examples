@@ -16,7 +16,7 @@ jobs:
             command: |
               aws cloudformation create-stack \
                 --stack-name myStack-${CIRCLE_WORKFLOW_ID:0:5} \
-                --template-body template.yml \
+                --template-body file://~/template.yml \
                 --region us-east-1
 
 # Sequential workflow
