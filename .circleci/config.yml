@@ -42,4 +42,4 @@ workflows:
   myWorkflow:
     jobs:
       #- create_infrastructure
-      - config_infrastructure:
+      - config_infrastructure
