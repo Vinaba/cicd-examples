@@ -73,7 +73,9 @@ jobs:
     docker:
       - image: amazon/aws-cli
     steps:
-      - run: return 1
+      - run:
+          name: Test job
+          command: return 1
       - destroy_environment
 
 
